@@ -4,7 +4,7 @@
   <h1 align="center">Extended Reality with HMD-Assisted Guidance and Console 3D Overlay for Robotic Surgery Remote Mentoring</h1>
 
   <p align="center">
-   MICCAI 2025, Early Accept
+   RA-L 2024
     <br />
     <a href="https://chengkunli96.github.io/"><strong>Chengkun Li</strong></a>
     ·
