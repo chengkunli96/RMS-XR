@@ -29,8 +29,8 @@
   <p align="center">
     <!-- <a href='https://xxxxxxxx'>
       <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='Paper PDF'></a> -->
-    <a href='https://arxiv.org/abs/2507.06647'><img src='https://img.shields.io/badge/arXiv-2409.18964-b31b1b.svg'  alt='Arxiv'></a>
-    <a href='https://med-air.github.io/ClipGS/' style='padding-left: 0.5rem;'><img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'></a>
+    <a href='https://chengkunli96.github.io/RMS-XR/' style='padding-left: 0.5rem;'><img src='https://img.shields.io/badge/RAL-Full Paper-red?style=flat&logo=Google%20chrome&logoColor=red' alt='RAL'></a>
+    <a href='https://chengkunli96.github.io/RMS-XR/' style='padding-left: 0.5rem;'><img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'></a>
     <!-- <a href='https://colab.research.google.com/drive/1imGIms3Y4RRtddA6IuxZ9bkP7N2gVVC_' style='padding-left: 0.5rem;'><img src='https://colab.research.google.com/assets/colab-badge.svg' alt='Google Colab'></a> -->
     <!-- <a href='https://youtu.be/lCc1rHePEFQ' style='padding-left: 0.5rem;'>
       <img src='https://img.shields.io/badge/Youtube-Video-red?style=flat&logo=youtube&logoColor=red' alt='Youtube Video'></a> -->
