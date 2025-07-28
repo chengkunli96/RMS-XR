@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content=" Clippable Gaussian Splatting for Interactive Cinematic Visualization of Volumetric Medical Data.">
+  <meta name="keywords" content="Virtual Reality and Interfaces, Computer Vision for Medical Robotics, Surgical Robotics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Extended Reality with HMD-Assisted Guidance and Console 3D Overlay for Robotic Surgery Remote Mentoring</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/app.css">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <link rel="stylesheet" href="./static/css/own.min.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/video_comparison.js"></script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+  <style>
+    .gradient-text {
+        background-image: linear-gradient(to right, #b59f00, green, blue);
+        /* Darker yellow */
+        -webkit-background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+        font-weight: bold;
+        /* Make the text bold */
+    }
+
+    .title.is-1.publication-title {
+        font-size: 48px;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #b59f00, green, blue);
+        /* Darker yellow */
+        -webkit-background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text;
+    }
+
+    .interpolation-image-small {
+        width: 75%;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .subtitle.has-text-centered-small {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    /* Add horizontal scrolling for code blocks */
+    pre code {
+        overflow-x: auto;
+        white-space: pre;
+        word-wrap: normal;
+    }
+    
+    pre {
+        overflow-x: auto;
+    }
+    </style>
+
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title", style="font-size: 42px;">
+              Extended Reality with HMD-Assisted Guidance and Console 3D Overlay for Robotic Surgery Remote Mentoring
+            </h1>
+            <h2 class="subtitle is-3 publication-subtitle">RA-L 2024</h2>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://chengkunli96.github.io/">Chengkun Li</a><sup>1</sup> · </span>
+              <span class="author-block">
+                <a href="https://dblp.org/pid/239/9969.html">Yuqi Tong</a><sup>1</sup> · </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=HIjQdFQAAAAJ&hl=en">Yonghao Long</a><sup>1</sup> · </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=E4efwTgAAAAJ&hl=en">Weixin Si</a><sup>2</sup> · </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=PpzjA8UAAAAJ&hl=en">David Chun Man Yeung</a><sup>3</sup> · </span>
+              <span class="author-block">
+                <a href="https://www.med.cuhk.edu.hk/staff/dr-chan-ying-kuen-jason">Jason Ying-Kuen Chan</a><sup>3</sup> · </span>
+              <span class="author-block">
+                <a href="http://www.cse.cuhk.edu.hk/~pheng/">Pheng-Ann Heng</a><sup>1</sup> · </span>
+              <span class="author-block">
+                <a href="http://www.cse.cuhk.edu.hk/~qdou/">Qi Dou</a><sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Dept. of Computer Science and Engineering, The Chinese University of Hong Kong</span><br>
+              <span class="author-block"><sup>2</sup>Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences</span><br>
+              <span class="author-block"><sup>3</sup>Dept. of Otorhinolaryngology, Head and Neck Surgery, The Chinese University of Hong Kong</span>
+            </div>
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal Contributions</span>
+            </div> -->
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://ieeexplore.ieee.org/document/10669229"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- arXiv Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/2507.06647" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/chengkunli96/RMS-XR"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/teaser.mp4" type="video/mp4">
+        </video> -->
+        <img src="./assets/images/teaser.png" class="interpolation-image" />
+        <br>
+        <h2 class="subtitle has-text-centered">
+          The prototype of our remote mentoring surgery's extended reality system (<span class="gradient-text" font-weight: bold>RMS-XR</span>). 
+        </h2>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The concept of remote-guided surgery has garnered significant attention among researchers as a possible solution to transcend geographic barriers and facilitate the integration of medical resources across diverse regions. However, establishing effective communication channels between remote specialists and surgeons poses an ongoing challenge in this field. 
+              In this paper, we propose an extended reality (XR) remote mentoring system for robotic surgery. 
+              The system employs an optical see-through head-mounted display (OST-HMD) to provide real-time 3D endoscopic visualization and enable remote mentors to offer surgical guidance through natural hand gestures and virtual surgical instruments. 
+              Additionally, a console 3D overlay method is introduced to enhance the depth perception of the console surgeon by stereo occlusion-aware overlaying augmented surgical tools onto the real endoscopic video. 
+              The system incorporates the assistant's role in the surgical team by transmitting the assistant's view to the console surgeon and remote mentor, enriching the information in the operating room. 
+              Latency and accuracy experiments have proved the efficiency of the system. The user study in a simulated surgical task shows promising performance for optimizing user experience and reducing communication costs.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="./assets/videos/demo_video.mp4"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Overview</h2>
+      <img src="./assets/images/method.png" class="interpolation-image" />
+      <div style="margin-top: 1rem;">
+        <p>
+          In our system, the computing server directly captures the stereo laparoscopic video from the surgical robot to predict the disparity map. 
+          Then, the RGB and disparity maps of the surgical scenario are transmitted to local assistants and remote mentor clients for further reconstruction of the 3D surgical scenario in the XR device. 
+          Besides, the remote experts can naturally use hand-based interaction to grasp the virtual instruments to indicate their suggestions, or use the label tool to type and highlight critical anatomy. 
+          The guidance from remote mentors is stereo occlusion-aware overlaid on the endoscopic stream and shown in the robot’s console. Additionally, the assistant’s perspective is transmitted to both the console surgeon and the remote mentor, thereby enriching the information in the operating environment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+<pre><code>@ARTICLE{10669229,
+  author={Li, Chengkun and Tong, Yuqi and Long, Yonghao and Si, Weixin and Yeung, David Chun Man and Chan, Jason Ying-Kuen and Dou, Qi},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Extended Reality With HMD-Assisted Guidance and Console 3D Overlay for Robotic Surgery Remote Mentoring}, 
+  year={2024},
+  volume={9},
+  number={10},
+  pages={9135-9142},
+  keywords={Surgery;Extended reality;Three-dimensional displays;Mentoring;Instruments;Sockets;Virtual reality;Computer vision;Medical robotics;Virtual reality and interfaces;computer vision for medical robotics;surgical robotics},
+  doi={10.1109/LRA.2024.3455936}}</code></pre>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://ieeexplore.ieee.org/document/10669229">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/chengkunli96/RMS-XR" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              The source code of this website is borrowed from <a
+                href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+              We thank the authors for sharing the template.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
